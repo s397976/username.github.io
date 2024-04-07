@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -52,12 +53,37 @@
         
       </div>
     </div>
-    <nav class="bg-green-800">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <div>nambe</div>
-            <div>menue</div>
-            <div>email</div>
+    <nav class="bg-green-200">
+        <div >
+          <div class="relative flex  items-center justify-between">
+            <img src="{% static 'Group1.jpg' %}">
+          
+          <div class='flex flex-row space-x-12'>
+            <div >
+             <ul class='list-none'>
+              <li><h1 class="text-orange-700 font-black">Explore</h1></li>
+                <li>Home</li>
+                <li>courses</li>
+                <li>About Us</li>
+             </div>
+            <div>
+            <ul class='list-none '>
+              <li><h1 class='text-orange-700 font-black'>Contact us</h1></li>
+                    <li>Facebook</li>
+                    <li>+84 912345678</li>
+                    <li>X</li>
+            </div>      
+          </div>
+            
+              <form>
+                <h1>
+                Keep In Touch
+              </h1>
+<p>By entering your email address below, you consent to
+  <p>  receiving our newsletter with access to our
+    <p>latest collections, events and initiatives.
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="email">
+            </form>
             
               </div>
             </div>

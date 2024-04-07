@@ -1,3 +1,4 @@
+from django.template import loader
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -12,3 +13,9 @@ def greet(request, name):
     })
 def base (request):
     return render(request,"theme/base.html")
+def testing(request):
+  template = loader.get_template('index.html')
+  context = {
+    'fruits': ['Apple', 'Banana', 'Cherry'],   
+  }
+  return HttpResponse(template.render(context, request)) 
